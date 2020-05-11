@@ -1,0 +1,44 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: #0b0b0b;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+li{
+    display: inline-block;
+}
+li a{
+    text-decoration: none;
+    display: inline-block;
+    color: rgb(252, 252, 252);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    font-size: 28px;
+    padding: 0 20px;
+}
+.cool::after{
+    content: "";
+    display: block;
+    width: 0px;
+    height: 2px;
+    background: rgb(148, 236, 33);
+    transition: width .3s;
+}
+.cool:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+
+
+
+
+
+
+
